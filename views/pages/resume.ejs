@@ -1,0 +1,363 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<%- include('../partials/head') %>
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<%- include('../partials/preloader') %>
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Cursor -->
+		<div class="cursor-follower"></div>
+
+		<!-- Header -->
+		<header class="header">
+			<%- include('../partials/header') %>
+		</header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Section Started -->
+			<div class="section started section-title" id="section-started">
+
+				<!-- background -->
+				<div class="video-bg">
+					<div class="video-bg-mask"></div>
+					<div class="video-bg-texture" id="grained_container"></div>
+				</div>
+
+				<!-- started content -->
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content">
+							<h1 class="h-title">Resume</h1>
+							<div class="h-subtitles">
+								<div class="h-subtitle typing-bread">
+									<p class="breadcrumbs">
+										<a href="index.ejs">Home</a> / Resume
+									</p>
+								</div>
+								<span class="typed-bread"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- mouse button -->
+				<a href="#" class="mouse_btn" style="display: none;"><span class="icon fas fa-chevron-down"></span></a>
+
+			</div>
+
+			<!-- Section About -->
+			<div class="section about" id="section-about">
+				<div class="content content-box">
+
+					<!-- image -->
+					<div class="image">
+						<img src="images/shaan200.jpg" alt="" />
+					</div>
+
+					<!-- desc -->
+					<div class="desc">
+						<p>I played a lot of video games when I was younger. It's shaped the way I frame things. I'm always looking for a new challenge and trying to push myself to new limits whether it's the gym, a new project, building better habits. Here's a little bit about me and what I've done.</p>
+						<div class="info-list">
+							<ul>
+								<li><strong>Location:</strong> Boston, MA</li>
+								<li><strong>Availability:</strong> January 2022 - July 2022</li>
+							</ul>
+						</div>
+						<div class="bts">
+							<a href="images/ShaanHossainResume.pdf" download class="btn hover-animated">
+								<span class="circle"></span>
+								<span class="lnk">Download Resume	</span>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!-- Section Resume -->
+			<div class="section resume" id="section-history">
+				<div class="content">
+					<div class="cols">
+
+						<div class="col col-md">
+
+							<!-- title -->
+							<div class="title">
+								<div class="title_inner">Experience</div>
+							</div>
+
+							<!-- resume items -->
+							<div class="resume-items">
+
+								<div class="resume-item content-box active">
+									<div class="date">May 2021 - Present</div>
+									<div class="name">Co-Founder/Software Engineer - Beat the Book Inc.</div>
+									<div class="text"><b>Building</b> a simulated betting experience to support a diverse community. <br />
+										<b>Managing</b> and working on a team of developers to build our MVP. <br />
+										<b>Architecting</b> how our various systems will integrate with each other including our live data feed, a
+										Postgres database, a Redis cache, and our monolith Spring Boot + React application <br />
+										<b>Note:</b> I have to be pretty careful what I share about BTB per the advice of the law firm we're working with,
+										but I love talking about whatever we're working on in person.
+
+								</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">January 2021 - June 2021</div>
+									<div class="name">Backend Software Engineer - Chewy Inc.</div>
+									<div class="text">
+										<b>Migrated</b> parts of web applications from using a monolithic API to a new suite of microservices. <br />
+										<b>Designed, implemented, and updated</b> various backend endpoints in different backend web applications. <br />
+										<b>Worked</b> on features through the development process from design, implementation, testing, and then deployment. <br />
+
+									</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">September 2020 - December 2020</div>
+									<div class="name">TA for Algorithms and Data Structures - Northeastern University</div>
+									<div class="text">
+										<b>Facilitated</b> learning by answering questions extensively during office hours and clarifying concepts on the class’s piazza, a digital platform for students to post questions that instructors answer. <br />
+										<b>Graded</b> assignments carefully by following student logic and awarding points based on understanding, rationale, and logic versus only the correct answer.
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col col-md">
+
+							<!-- title -->
+							<div class="title">
+								<div class="title_inner">Projects</div>
+							</div>
+
+							<!-- resume items -->
+							<div class="resume-items">
+
+								<div class="resume-item content-box active">
+									<div class="date">September 2021 - Present</div>
+									<div class="name">NFT Project</div>
+									<div class="text">
+										<b>Configured</b> Express server. <br />
+										<b>Deployed</b> on Heroku. <br />
+										<b>Wrote</b> Solidity smart contract to mint NFTs. <br />
+										<b>Implementing</b> Image splicing algorithm to process layers into images given weighted distributions.
+									</div>
+								</div>
+
+								<div class="resume-item content-box active">
+									<div class="date">July 2021 - Present</div>
+									<div class="name">Personal Website</div>
+									<div class="text">
+										<b>Deployed</b> through AWS. <br />
+										<b>Dockerized</b> Express server. <br />
+										<b>Configured</b> UI server in Express serving static files for backend capability with interactive projects later on. <br />
+										<b>Credit</b> to Beshleyua for the static CSS files and HTML that is responsible for some of the layout and all of the styling.
+
+
+									</div>
+								</div>
+
+								<div class="resume-item content-box active">
+									<div class="date">April 2021 - Present</div>
+									<div class="name">Medical Calculator</div>
+									<div class="text">
+										<b>Quickly</b> built a lightweight backend in flask to serve a mostly client-side calculator built in JS, HTML5, and CSS for medical equations including glucose infusion rates and dosage calculations. <br />
+										<b>Implemented</b> a service worker to cache the calculator for offline use per user request.
+									</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">December 2020 - April 2021</div>
+									<div class="name">Profile Evaluator (Project on Hold)</div>
+									<div class="text">
+										<b>Working</b> to evaluate profiles on Tinder, Instagram, and LinkedIn. <br />
+										<b>Designing</b> an algorithm that leverages a k-nearest-neighbors algorithm, cosine similarity, and Google’s Cloud Vision API to evaluate and score profiles and then suggest improvement
+									</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">July 2019 - September 2019</div>
+									<div class="name">Blackjack Simulator (Project on Hold)</div>
+									<div class="text">
+										<b>Outlined</b> and then implemented a program in Python to simulate a game of blackjack with a variable number of players using different rulesets for how they play the game. One player would be counting cards and using a ruleset based on this advantage whereas the other players only use perfect basic strategy without cheating. <br />
+										<b>Used</b> Matplotlib to display information succinctly for non-computer science colleagues for the purpose of counting cards.
+									</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">October 2019 - December 2019</div>
+									<div class="name">Linear Algebra Programming Project</div>
+									<div class="text"><b>Designed</b> a program in Python to perform a bipartite matching based on users with weighted preferences by calculating compatibility values and leveraging the matrix functions of NumPy and TensorFlow</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Design Skills -->
+			<div class="section skills" id="section-skills">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">Langauges</div>
+					</div>
+
+					<!-- skills items -->
+					<div class="skills percent content-box">
+						<ul>
+							<li>
+								<div class="name">Java</div>
+								<div class="progress ">
+									<div class="percentage" style="width: 85%;">
+										<span class="percent">85%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Python</div>
+								<div class="progress ">
+									<div class="percentage" style="width: 75%;">
+										<span class="percent">75%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Javascript</div>
+								<div class="progress ">
+									<div class="percentage" style="width: 40%;">
+										<span class="percent">40%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Knowladge Skills -->
+			<div class="section skills" id="section-skills-know">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">Frameworks</div>
+					</div>
+
+					<!-- skills -->
+					<div class="skills list content-box">
+						<ul>
+							<li>
+								<div class="name">Spring Boot</div>
+							</li>
+							<li>
+								<div class="name">Express on NodeJS platform</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Knowladge Skills -->
+			<div class="section skills" id="section-skills-know">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">Build tools, software, and various technologies</div>
+					</div>
+
+					<!-- skills -->
+					<div class="skills list content-box">
+						<ul>
+							<li>
+								<div class="name">Docker</div>
+							</li>
+							<li>
+								<div class="name">Gradle</div>
+							</li>
+							<li>
+								<div class="name">Postman</div>
+							</li>
+							<li>
+								<div class="name">Postgres</div>
+							</li>
+							<li>
+								<div class="name">Heroku</div>
+							</li>
+							<li>
+								<div class="name">Redis</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Knowladge Skills -->
+			<div class="section skills" id="section-skills-know">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">AWS</div>
+					</div>
+
+					<!-- skills -->
+					<div class="skills list content-box">
+						<ul>
+							<li>
+								<div class="name">EC2</div>
+							</li>
+							<li>
+								<div class="name">SNS</div>
+							</li>
+							<li>
+								<div class="name">ECS</div>
+							</li>
+							<li>
+								<div class="name">SQS</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<%- include('../partials/footer') %>
+		</footer>
+
+		<!-- Lines -->
+		<%- include('../partials/lines') %>
+
+	</div>
+
+	<!-- Scripts -->
+	<%- include('../partials/scripts') %>
+
+</body>
+</html>
